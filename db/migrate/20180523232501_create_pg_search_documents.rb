@@ -14,7 +14,7 @@ class CreatePgSearchDocuments < ActiveRecord::Migration[5.2]
       execute "CREATE EXTENSION IF NOT EXISTS fuzzystrmatch;"
     end
   end
-
+ thu
   def self.down
     say_with_time("Dropping table for pg_search multisearch") do
       drop_table :pg_search_documents
